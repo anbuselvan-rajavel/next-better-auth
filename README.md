@@ -45,7 +45,9 @@ better-auth-nextjs
 │  │  │  └─ page.tsx
 │  │  └─ sign-in
 │  │     ├─ magic-link.ts
-│  │     └─ page.tsx
+│  │     ├─ page.tsx
+│  │     └─ verify
+│  │        └─ page.tsx
 │  ├─ api
 │  │  └─ auth
 │  │     └─ [...better-auth]
@@ -78,11 +80,23 @@ better-auth-nextjs
 │  │  │  └─ migration.sql
 │  │  ├─ 20241221095833_init
 │  │  │  └─ migration.sql
+│  │  ├─ 20241221130001_init
+│  │  │  └─ migration.sql
+│  │  ├─ 20241221131229_add_verification_model
+│  │  │  └─ migration.sql
+│  │  ├─ 20241221132335_verification_model_added
+│  │  │  └─ migration.sql
+│  │  ├─ 20241221132932_updated_schema
+│  │  │  └─ migration.sql
+│  │  ├─ 20241221134953_updated_schema
+│  │  │  └─ migration.sql
 │  │  └─ migration_lock.toml
 │  └─ schema.prisma
 ├─ public
 │  ├─ file.svg
 │  ├─ globe.svg
+│  ├─ images
+│  │  └─ homepage.png
 │  ├─ next.svg
 │  ├─ vercel.svg
 │  └─ window.svg
@@ -90,4 +104,4 @@ better-auth-nextjs
 ├─ tailwind.config.ts
 └─ tsconfig.json
 
-```# next-better-auth
+```

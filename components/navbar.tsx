@@ -10,11 +10,18 @@ export default function Navbar() {
 <Rabbit />
 nextsecure.
 </div>
+<div className='flex'>
 <Button>
     <Link href="/sign-in">
     Sign In
     </Link>
     </Button>
+    <Button>
+    <Link href="/">
+    Log Out
+    </Link>
+    </Button>
+</div>
     </div>
   )
 }
