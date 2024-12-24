@@ -41,7 +41,7 @@ export const auth = betterAuth({
           }
         });
 
-        const magicLinkUrl = `${process.env.BETTER_AUTH_URL}/sign-in/verify?token=${token}`;
+        const magicLinkUrl = `${url}`;
 
         await transport.sendMail({
           from: '"Your App" <notifications@yourdomain.com>',
@@ -57,5 +57,5 @@ export const auth = betterAuth({
         });
       },
     }),
-  ]
+  ],
 });
