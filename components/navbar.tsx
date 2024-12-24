@@ -8,7 +8,7 @@ import { useSession, signOut } from '@/lib/auth-client'
 import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
-  const { data, isPending, error } = useSession()
+  const { data, isPending } = useSession()
   const [isClient, setIsClient] = useState(false)
   const router = useRouter()
 

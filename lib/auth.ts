@@ -31,7 +31,7 @@ export const auth = betterAuth({
   },
   plugins: [
     magicLink({
-      sendMagicLink: async ({ email, token, url }) => {
+      sendMagicLink: async ({ email, url }) => {
         const transport = nodemailer.createTransport({
           host: "sandbox.smtp.mailtrap.io",
           port: 2525,
